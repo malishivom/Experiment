@@ -7,10 +7,14 @@ pipeline {
 
   }
   stages {
+    stage('Build') {
+      steps {
+        bat 'echo shivom'
+      }
+    }
     stage('') {
       steps {
-        echo 'Shivom Mali'
-        bat 'echo shivom'
+        bat 'echo test'
       }
     }
   }
